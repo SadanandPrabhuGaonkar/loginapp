@@ -19,6 +19,14 @@ app.use(bodyParser.json({ type: 'application/json' }));
 
 app.use(express.static('public'));
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ0C5YSF07"></script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EQ0C5YSF07');
+
 try {
 	mongoose.connect(
 	  "mongodb+srv://sadanand:vKazSunVLSQw7tpU@cluster0.g513h.mongodb.net/new?retryWrites=true&w=majority"
